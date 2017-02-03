@@ -261,6 +261,17 @@ nvl- null value function
 select book_code,NVL(BOOK_ACTUAL_RETURN_DATE,SYSDATE)FROM BOOK_TRANSACTION;
 select book_code,NVL2(BOOK_ACTUAL_RETURN_DATE,SYSDATE)FROM BOOK_TRANSACTION;
 
+declare
+v_emp employee_a80.empno%type := 111;
+v_sal number :=1234;
+begin
+	if v_emp=111 then
+		update employee_a80 
+		set salary =salary+v_sal 
+		where empno=v_emp;
+	end if;
+	dbms_output.put_line('updation done!!');
+end;
 
 
 
