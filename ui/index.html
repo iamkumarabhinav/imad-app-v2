@@ -3,25 +3,27 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<script>
+    function myAdd()
+    {
+        var num1=parseInt(document.getElementsById("txt1").value);
+        var num2=parseInt(document.getElementsById("txt1").value);
+        alert(num1);
+    }
+    function mySub()
+    {
+        
+    }
+    
+</script>
 </head>
 <body>
-<form method="post" action="hello.html">
-	Username :<input type="text" name="uname" minlength="3" maxlength="8"placeholder="Enter User Name"required/>*<br>
-	Password :<input type="password" name="pass"required/>*<br>
-	salary  <input type="number" name="sal" value="Login"/>
-	Salary: <input type="number" name="sal" min="1000" max="5000"/><br>
-	<input type="Submit" name="subbtn" value="login"/>
-	<input type="reset" name="rbtn" value="cancel"/></form>
-	Email : <input type="email" name="mail" placeholder:"abc@gmail.com"/>
-	Search : <input type="search" name="search"/>
-	Color : <input type="color" name="color" placeholder="Choose the color"/>
-	Range : <input type="range" name="range" min=0 max=10 value=5/>
-	Date : <input type="date" name="date" min="01-01-1994" max="31-12-2017"/>
-	Month : <inout type="month" name="month"/>
-	Week : <input type="week" name="week"/>
-	Time : <input type="time" name="time" />
-	<input type="Submit" name="subbtn" value="Login"/>
-	<input type="Reset" name="rbtn" value="Cancel"/>
+<form>
+<input type="text" type id="text1" name="txtnum1">
+<input type="text" type id="text2" name="txtnum2">
+<input type="button" type id="btn1" name="btttn1" value="add">
+<input type="button" type id="btn2" name="btttn2" value="sub">
 </form>
 </body>
 </html>
+
