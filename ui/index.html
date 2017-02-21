@@ -9,7 +9,9 @@ function myAdd() {
        var num2=parseInt(document.getElementById("txt12").value);
        var ans=num1+num2;
        var v=document.getElementById("txt3");
-       v.value=ans;
+     //  v.value=ans;
+     document.form1.Txtnum3.value=ans;
+     alert("Addition"+ans);
 }
 
 function mySub() {
@@ -22,11 +24,12 @@ function mySub() {
        //alert("Subtraction :"+ans)
        var v=document.getElementById("txt3");
        v.value=ans;
+       alert("subtraction"+ans);
 }
 </script>
 </head>
 <body>
-<form>
+<form name="form1">
 <input type="text" id="txt1" name="Txtnum1">
 <input type="text" id="txt12" name="Txtnum2">
 <input type="text" id="txt3" name="Txtnum3" readonly="readonly">
