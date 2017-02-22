@@ -3,23 +3,22 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<script>
-    function addpara()
-    {
-    	var v=document.createElement("p");
-    	var ptext=document.createTextNode("para3");
-    	v.appendChild(ptext);
-    	var v1=document.getElementById("mydiv");
-    	v1.appendChild(v);
-    	var p2=document.getElementById()
-    	v1.insertBefore(v,v1.childNodes[1])
-    }
-</script>
 </head>
 <body>
-    <div id="mydiv">
-        <p id>para1</p>
-        <p id="p1">para2</p>
-    </div>
-<button type="button" id="btn1" name="button1" onclick="addpara()"> CLICK </button></body>
+<h2>Reading JSON Object using Javascript</h2>
+<p id="pData"></p>
+<script type="text/javascript">
+var obj=new Object();
+obj.fname="John";
+obj.lname="Doe";
+jsonText =JSON.stringify(obj);
+document.write(jsonText);
+
+var Students=new Array();
+Students[0]="John Doe";
+Students[1]="Jane Smith";
+var jsonText=JSON.stringify(Students);
+document.getElementById("pData");
+</script>
+</body>
 </html>
