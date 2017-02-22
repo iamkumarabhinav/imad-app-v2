@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>Reading JSON Object using Javascript</h2>
+<p id="pData"></p>
+<script type="text/javascript">
+var jsonData=
+	'{"fName":"Jane","lName":"Doe","isAlive": true,"age":23}';
+	var contact =JSON.parse(jsonData);
+	document.getElementById("pData").innerHTMl=
+		contact.fName +"<br>"+
+		contact.lName +"<br>"+
+		contact.age;
+</script>
+</body>
+</html>
