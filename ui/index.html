@@ -4,29 +4,32 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 <script>
-    function compare()
+    function validatepass()
     {
     	var a=document.getElementById("txt1").value;
-    	   var b=document.getElementById("txt2").value;
+    	var b=document.getElementById("txt2").value;
     	   if(a==b)
     	{ 
-    	        document.write("equal";
-    	        alert("valid");
-    	    	   location.reload();
-    		   
+    	        document.write("valid pwd";
+    	        return true;
     		   }
     	   else
     		   {
-    	document.write("not equal");	  
-    		   alert("invalid");
+    		       document.getElementById("frm1").reset();
+    		       document.getElementById("mydiv").innerHTML="Both the values are not same"
+    		       return false;
+
     		   }
     }
     </script>
 </head>
 <body>
-<form>
-   Password:<input type="text" id="txt1" name="txtnum1"><br>
-   Confirm Password:<input type="text" id="txt2" name="textnum2"><br>
+    <div id="mydiv">
+        
+    </div>
+<form method="post" onsubmit="return validatepass()">
+   Password:<input type="text" id="txt1" name="txt1"><br>
+   Confirm Password:<input type="text" id="txt2" name="txt2"><br>
    <input type="submit" id="btn" onsubmit=compare() name="subbtn" value="OK">
 </form>
 </body>
