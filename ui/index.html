@@ -4,28 +4,22 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 <script>
-    function validatepass()
+    function addpara()
     {
-    	var a=document.getElementById("txt1").value;
-    	var b=document.getElementById("txt2").value;
-    	   if(a==b)
-    	{ 
-    	        document.write("valid pwd";
-    	        return true;
-    		   }
-    	   else
-    		   {
-    		       document.getElementById("frm1").reset();
-    		       document.getElementById("mydiv").innerHTML="Both the values are not same"
-    		       return false;
-
-    		   }
+    	var v=document.createElement("p");
+    	var ptext=document.createTextNode("para3");
+    	v.appendChild(ptext);
+    	var v1=documnet.getElementById("mydiv");
+    	v1.appendChild(v);
+    	var p2=documnet.getElementById()
+    	v1.insertBefore(v,v1.childNodes[1])
     }
-    </script>
+</script>
 </head>
 <body>
     <div id="mydiv">
-        
+        <p id>para1</p>
+        <p id="p1">para2</p>
     </div>
 <form method="post" onsubmit="return validatepass()">
    Password:<input type="text" id="txt1" name="txt1"><br>
